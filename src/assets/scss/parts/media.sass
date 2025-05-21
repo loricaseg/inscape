@@ -63,7 +63,7 @@
 		padding: 16px 0
 		.container
 			justify-content: flex-start
-	.main-menu__right
+	#neve_body .main-menu__right
 		margin-left: auto
 		margin-right: 16px
 	.landing
@@ -152,6 +152,59 @@
 			padding: 0
 			height: auto
 			overflow: visible
+	.mobile-menu
+		display: none
+		margin-top: 32px
+		&__list
+			border-radius: 16px
+			background: rgba(255, 255, 255, 0.04)
+			display: flex
+			padding: 0 16px
+			padding-top: 16px
+			flex-direction: column
+			align-items: flex-start
+			li
+				width: 100%
+				padding-bottom: 16px
+				border-bottom: 1px solid rgba(255, 255, 255, 0.10)
+				margin-bottom: 16px
+				position: relative
+				&::after
+					content: ''
+					position: absolute
+					right: 0
+					top: 0px
+					background: url('../files/arr4.svg') no-repeat center
+					width: 24px
+					height: 24px
+				&:last-child
+					border: none
+					margin-bottom: 0
+			a
+				color: #fff
+				font-size: 18px
+				font-style: normal
+				font-weight: 600
+				line-height: 24px
+				letter-spacing: -0.27px
+				display: flex
+				justify-content: space-between
+				width: 100%
+			li.active
+				a
+					color: #767573
+	.main-menu.active
+		position: fixed
+		z-index: 11
+		background: #090909
+		width: 100%
+		min-height: 100vh
+		.mobile-menu
+			display: block
+		.main-menu__trigger
+			svg
+				path
+					fill: $orange
 @media screen and ( max-width: 720px )
 
 	.login
@@ -279,7 +332,7 @@
 			width: 64px
 
 		&__col
-			max-width: 370px
+			max-width: 100%
 			grid-gap: 0
 		.logo
 			margin-bottom: 16px

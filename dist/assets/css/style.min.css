@@ -62,20 +62,20 @@ input, textarea, a, button {
 }
 
 body {
-  background: #fff;
-  box-sizing: border-box;
+  background: #fff !important;
+  box-sizing: border-box !important;
   padding: 0 !important;
-  margin: 0;
-  overflow-x: hidden;
-  font-family: "Inter", sans-serif;
-  color: #434343;
-  font-weight: 400;
-  -webkit-text-size-adjust: none;
-  padding: 0 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  margin: 0 !important;
+  overflow-x: hidden !important;
+  font-family: "Inter", sans-serif !important;
+  color: #434343 !important;
+  font-weight: 400 !important;
+  -webkit-text-size-adjust: none !important;
+  padding: 0px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 100% !important;
 }
 
 li {
@@ -89,11 +89,11 @@ ul {
 
 p {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
 }
 
 textarea {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
   font-size: 14px;
   resize: none;
 }
@@ -119,12 +119,12 @@ input:active, input:focus, button:active, button:focus, span:active, span:focus,
 }
 
 textarea, input {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
   letter-spacing: 0;
 }
 
 button {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
   background: none;
   cursor: pointer;
   border: none;
@@ -143,7 +143,7 @@ h1 {
 
 h1, h2 {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
 }
 
 h2 {
@@ -155,7 +155,7 @@ h2 {
 
 h3 {
   font-size: 30px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
   margin-top: 0;
   font-weight: 600;
 }
@@ -205,14 +205,18 @@ section {
 
 .container {
   padding: 0 100px;
-  margin: 0 auto;
+  margin: 0 auto !important;
   position: relative;
   overflow: hidden;
   width: 1440px;
 }
 
-.row {
+#neve_body .row {
   display: flex;
+}
+
+body .row {
+  margin: 0;
 }
 
 .row-center {
@@ -235,7 +239,7 @@ section {
   overflow-y: hidden;
 }
 
-.btn {
+#neve_body .btn, #neve_body .btn[type=submit] {
   display: flex;
   height: 48px;
   padding: 0px 24px;
@@ -253,22 +257,22 @@ section {
   line-height: 24px;
   letter-spacing: -0.08px;
 }
-.btn:hover {
+#neve_body .btn:hover, #neve_body .btn[type=submit]:hover {
   color: #fff;
   background: #EA6F0B;
   transition: all 0.2s ease-out;
 }
-.btn:active {
+#neve_body .btn:active, #neve_body .btn[type=submit]:active {
   background: #D6660A;
 }
-.btn:disabled, .btn.disabled {
+#neve_body .btn:disabled, #neve_body .btn.disabled, #neve_body .btn[type=submit]:disabled, #neve_body .btn[type=submit].disabled {
   background: rgba(255, 255, 255, 0.08);
   color: #767573;
   cursor: none;
   pointer-events: none;
 }
 
-.login__form__google {
+#neve_body .login__form__google {
   border-radius: 10px;
   background: none;
   display: flex;
@@ -276,10 +280,10 @@ section {
   padding: 10px 0;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-.login__form__google span {
+#neve_body .login__form__google span {
   color: #fff;
 }
-.login__form__google:hover {
+#neve_body .login__form__google:hover {
   background: rgba(255, 255, 255, 0.08);
 }
 
@@ -331,10 +335,10 @@ section {
     width: 980px;
   }
 }
-.input * {
+#neve_body .input * {
   transition: all 0.2s ease-out;
 }
-.input label {
+#neve_body .input label {
   display: flex;
   position: relative;
   align-items: center;
@@ -342,7 +346,7 @@ section {
   align-self: stretch;
   justify-content: space-between;
 }
-.input input {
+#neve_body .input input {
   padding: 10px 16px;
   background: rgba(255, 255, 255, 0.08);
   width: 100%;
@@ -357,14 +361,14 @@ section {
   border: 1px solid transparent;
   letter-spacing: -0.08px;
 }
-.input input::placeholder {
+#neve_body .input input::placeholder {
   color: #767573;
   font-size: 16px;
 }
-.input input:focus-within {
+#neve_body .input input:focus-within {
   border: 1px solid #F57F21;
 }
-.input .input-error {
+#neve_body .input .input-error {
   margin-top: 6px;
   color: #F04438;
   font-size: 12px;
@@ -373,7 +377,7 @@ section {
   display: none;
   line-height: 16px;
 }
-.input .input-btn {
+#neve_body .input .input-btn {
   position: absolute;
   right: 16px;
   top: 50%;
@@ -381,22 +385,20 @@ section {
   transform: translateY(-50%);
   cursor: pointer;
 }
-.input .input-btn.active svg path {
+#neve_body .input .input-btn.active svg path {
   fill: #fff;
 }
-
-.input.error input {
+#neve_body .input.error input {
   border: 1px solid #F04438;
 }
-.input.error .input-error {
+#neve_body .input.error .input-error {
   display: block;
 }
-
-.checkbox {
+#neve_body .checkbox {
   position: relative;
   cursor: pointer;
 }
-.checkbox::after {
+#neve_body .checkbox::after {
   content: "";
   position: absolute;
   left: 0;
@@ -407,13 +409,13 @@ section {
   width: 20px;
   height: 20px;
 }
-.checkbox input {
+#neve_body .checkbox input {
   position: absolute;
   left: -100%;
   opacity: 0;
   z-index: -11;
 }
-.checkbox span {
+#neve_body .checkbox span {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -422,14 +424,13 @@ section {
   letter-spacing: -0.07px;
   padding-left: 32px;
 }
-.checkbox span a {
+#neve_body .checkbox span a {
   color: #1175DA;
 }
-.checkbox span a:hover {
+#neve_body .checkbox span a:hover {
   color: #F57F21;
 }
-
-.checkbox.active::after {
+#neve_body .checkbox.active::after {
   background: url("../files/check.svg") no-repeat center;
   background-size: contain;
 }
@@ -691,14 +692,6 @@ section {
 .signup__type .checkbox:hover {
   background: rgba(255, 255, 255, 0.12);
 }
-.signup__type .signup__type__text {
-  padding-left: 0;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: -0.08px;
-}
 .signup__type .checkbox.active {
   border: 1px solid #F57F21;
   background: rgba(255, 255, 255, 0.08);
@@ -711,11 +704,20 @@ section {
   fill: none;
 }
 
+#neve_body .signup__type .signup__type__text {
+  padding-left: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.08px;
+}
+
 .signup__form__descr {
   margin-top: 32px;
 }
 
-.signup-coupon {
+#neve_body .signup-coupon {
   display: flex;
   padding: 16px 20px;
   flex-direction: column;
@@ -728,7 +730,7 @@ section {
   margin-bottom: 32px;
   border: 1px solid transparent;
 }
-.signup-coupon__name {
+#neve_body .signup-coupon__name {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -736,28 +738,28 @@ section {
   margin-bottom: 4px;
   letter-spacing: -0.08px;
 }
-.signup-coupon__price {
+#neve_body .signup-coupon__price {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
   letter-spacing: -0.36px;
 }
-.signup-coupon__top {
+#neve_body .signup-coupon__top {
   width: 100%;
   align-items: center;
 }
-.signup-coupon__bottom {
+#neve_body .signup-coupon__bottom {
   width: 100%;
   padding-top: 16px;
   margin-top: 16px;
   border-top: 1px dashed rgba(255, 255, 255, 0.2);
 }
-.signup-coupon__row {
+#neve_body .signup-coupon__row {
   display: flex;
   justify-content: space-between;
 }
-.signup-coupon__row span {
+#neve_body .signup-coupon__row span {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -768,36 +770,36 @@ section {
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: -0.07px;
 }
-.signup-coupon__row p {
+#neve_body .signup-coupon__row p {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: -0.07px;
 }
-.signup-coupon__row:not(:last-child) {
+#neve_body .signup-coupon__row:not(:last-child) {
   margin-bottom: 8px;
 }
-.signup-coupon__color {
+#neve_body .signup-coupon__color {
   display: flex;
   gap: 8px;
   align-items: center;
 }
-.signup-coupon__color p {
+#neve_body .signup-coupon__color p {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.08px;
 }
-.signup-coupon__color span {
+#neve_body .signup-coupon__color span {
   width: 16px;
   height: 16px;
   flex-shrink: 0;
   padding-left: 0;
   border-radius: 40px;
 }
-.signup-coupon__label {
+#neve_body .signup-coupon__label {
   display: flex;
   height: 24px;
   padding: 4px 8px;
@@ -808,13 +810,13 @@ section {
   font-weight: 600;
   border-radius: 6px;
 }
-.signup-coupon .purple {
+#neve_body .signup-coupon .purple {
   background: #9C31F0;
 }
-.signup-coupon .blue {
+#neve_body .signup-coupon .blue {
   background: #5C33FF;
 }
-.signup-coupon span {
+#neve_body .signup-coupon span {
   padding-left: 0;
 }
 
@@ -849,14 +851,14 @@ section {
   transition: all 0.2s ease-out;
 }
 
-.all-coupons .signup-coupon {
+#neve_body .all-coupons .signup-coupon {
   margin-bottom: 12px;
 }
-.all-coupons .all-coupons__descr {
+#neve_body .all-coupons .all-coupons__descr {
   color: #fff;
   margin-top: 32px;
 }
-.all-coupons .all-coupons__descr p {
+#neve_body .all-coupons .all-coupons__descr p {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -864,7 +866,7 @@ section {
   text-align: center;
   margin-bottom: 8px;
 }
-.all-coupons .all-coupons__descr a {
+#neve_body .all-coupons .all-coupons__descr a {
   font-size: 12px;
   font-style: normal;
   gap: 8px;
@@ -877,38 +879,38 @@ section {
   width: fit-content;
   margin: 0 auto;
 }
-.all-coupons .all-coupons__descr a:hover {
+#neve_body .all-coupons .all-coupons__descr a:hover {
   color: #F57F21;
 }
-.all-coupons .all-coupons__descr a:hover svg {
+#neve_body .all-coupons .all-coupons__descr a:hover svg {
   transition: all 0.2s ease-out;
 }
-.all-coupons .all-coupons__descr a:hover svg path {
+#neve_body .all-coupons .all-coupons__descr a:hover svg path {
   transition: all 0.2s ease-out;
   fill: #F57F21;
 }
-.all-coupons .login__form__login {
+#neve_body .all-coupons .login__form__login {
   margin-top: 32px;
 }
 
-.login__form__back {
+#neve_body .login__form__back {
   background: rgba(255, 255, 255, 0.08);
 }
 
-.signup-coupon3 .signup-coupon__top {
+#neve_body .signup-coupon3 .signup-coupon__top {
   gap: 0;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
 }
-.signup-coupon3 .signup-coupon__label {
+#neve_body .signup-coupon3 .signup-coupon__label {
   position: absolute;
   top: 0;
   right: 0px;
   margin: 0;
 }
-.signup-coupon3 .signup-coupon__name {
+#neve_body .signup-coupon3 .signup-coupon__name {
   margin-bottom: 4px;
   font-size: 16px;
   font-style: normal;
@@ -916,12 +918,12 @@ section {
   line-height: 24px;
   letter-spacing: -0.08px;
 }
-.signup-coupon3 .signup-coupon__price {
+#neve_body .signup-coupon3 .signup-coupon__price {
   display: flex;
   align-items: flex-end;
   gap: 8px;
 }
-.signup-coupon3 .signup-coupon__price span {
+#neve_body .signup-coupon3 .signup-coupon__price span {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -929,7 +931,7 @@ section {
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: -0.07px;
 }
-.signup-coupon3 .signup-coupon__row__label {
+#neve_body .signup-coupon3 .signup-coupon__row__label {
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.1);
   display: flex;
@@ -945,13 +947,13 @@ section {
   line-height: 16px;
 }
 
-.coupon__slice {
+#neve_body .coupon__slice {
   margin-bottom: 32px;
   display: flex;
   gap: 12px;
   align-items: center;
 }
-.coupon__slice span {
+#neve_body .coupon__slice span {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -959,7 +961,7 @@ section {
   padding-left: 0;
   letter-spacing: -0.08px;
 }
-.coupon__slice__label {
+#neve_body .coupon__slice__label {
   border-radius: 6px;
   background: #2F9DD8;
   color: #fff;
@@ -974,7 +976,7 @@ section {
   align-items: center;
   gap: 10px;
 }
-.coupon__slice__round {
+#neve_body .coupon__slice__round {
   display: flex;
   width: 42px;
   height: 24px;
@@ -984,7 +986,7 @@ section {
   background: rgba(255, 255, 255, 0.2);
   position: relative;
 }
-.coupon__slice__round::after {
+#neve_body .coupon__slice__round::after {
   content: "";
   position: absolute;
   left: 2px;
@@ -996,14 +998,14 @@ section {
   background: #fff;
   border-radius: 100px;
 }
-.coupon__slice::after {
+#neve_body .coupon__slice::after {
   display: none;
 }
 
-.coupon__slice.active .coupon__slice__round {
+#neve_body .coupon__slice.active .coupon__slice__round {
   background: #F57F21;
 }
-.coupon__slice.active .coupon__slice__round::after {
+#neve_body .coupon__slice.active .coupon__slice__round::after {
   left: 20px;
   transition: all 0.2s ease-out;
 }
@@ -1055,25 +1057,16 @@ section {
   align-items: center;
   flex-shrink: 0;
 }
-.main-menu__notauth {
-  gap: 8px;
-}
-.main-menu__notauth .btn {
-  flex-shrink: 0;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  width: auto;
-  height: 40px;
-  padding: 0 16px;
-  color: #fff;
-  letter-spacing: -0.08px;
-}
 .main-menu__avatar {
   width: 40px;
+  border-radius: 100px;
   height: 40px;
   margin-right: 12px;
+}
+.main-menu__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .main-menu__auth {
   cursor: pointer;
@@ -1095,12 +1088,36 @@ section {
   transform: rotate(-180deg);
 }
 
-.btn-black {
+#neve_body .main-menu__notauth {
+  gap: 8px;
+}
+#neve_body .main-menu__notauth .btn {
+  flex-shrink: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  width: auto;
+  height: 40px;
+  padding: 0 16px;
+  color: #fff;
+  letter-spacing: -0.08px;
+}
+#neve_body .main-menu__right {
+  margin-left: 0;
+  margin-right: 16px;
+}
+#neve_body .giveaway-header__plate .btn {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 48px;
+}
+#neve_body .btn-black {
   border-radius: 8px;
   background: #090909;
 }
-
-.btn-white {
+#neve_body .btn-white {
   border-radius: 8px;
   background: #fff;
   color: #282828;
@@ -1684,6 +1701,10 @@ section {
   max-width: 100%;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 @media screen and (max-width: 1080px) {
   .login__left {
     display: none;
@@ -1780,7 +1801,7 @@ section {
     justify-content: flex-start;
   }
 
-  .main-menu__right {
+  #neve_body .main-menu__right {
     margin-left: auto;
     margin-right: 16px;
   }
@@ -1905,6 +1926,68 @@ section {
     padding: 0;
     height: auto;
     overflow: visible;
+  }
+
+  .mobile-menu {
+    display: none;
+    margin-top: 32px;
+  }
+  .mobile-menu__list {
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.04);
+    display: flex;
+    padding: 0 16px;
+    padding-top: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .mobile-menu__list li {
+    width: 100%;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .mobile-menu__list li::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0px;
+    background: url("../files/arr4.svg") no-repeat center;
+    width: 24px;
+    height: 24px;
+  }
+  .mobile-menu__list li:last-child {
+    border: none;
+    margin-bottom: 0;
+  }
+  .mobile-menu__list a {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.27px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .mobile-menu__list li.active a {
+    color: #767573;
+  }
+
+  .main-menu.active {
+    position: fixed;
+    z-index: 11;
+    background: #090909;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .main-menu.active .mobile-menu {
+    display: block;
+  }
+  .main-menu.active .main-menu__trigger svg path {
+    fill: #F57F21;
   }
 }
 @media screen and (max-width: 720px) {
@@ -2085,7 +2168,7 @@ section {
     width: 64px;
   }
   .main-footer__col {
-    max-width: 370px;
+    max-width: 100%;
     grid-gap: 0;
   }
   .main-footer .logo {

@@ -1,91 +1,92 @@
-.input
-	*
-		@include trans
-	label
-		display: flex
-		position: relative
-		align-items: center
-		gap: 16px
-		align-self: stretch
-		justify-content: space-between
-	input
-		padding: 10px 16px
-		background: $bg
-		width: 100%
-		border-radius: 8px
-		height: 48px
-		color: #fff
-		border: none
-		font-size: 16px
-		font-style: normal
-		font-weight: 400
-		line-height: 24px
-		border: 1px solid transparent
-		letter-spacing: -0.08px
-		&::placeholder
-			color: #767573
+#neve_body
+	.input
+		*
+			@include trans
+		label
+			display: flex
+			position: relative
+			align-items: center
+			gap: 16px
+			align-self: stretch
+			justify-content: space-between
+		input
+			padding: 10px 16px
+			background: $bg
+			width: 100%
+			border-radius: 8px
+			height: 48px
+			color: #fff
+			border: none
 			font-size: 16px
-		&:focus-within
-			border: 1px solid $orange
-	.input-error
-		margin-top: 6px
-		color: $red
-		font-size: 12px
-		font-style: normal
-		font-weight: 500
-		display: none
-		line-height: 16px
-	.input-btn
-		position: absolute
-		right: 16px
-		top: 50%
-		height: 24px
-		transform: translateY(-50%)
-		cursor: pointer
-	.input-btn.active
-		svg
-			path
-				fill: #fff
+			font-style: normal
+			font-weight: 400
+			line-height: 24px
+			border: 1px solid transparent
+			letter-spacing: -0.08px
+			&::placeholder
+				color: #767573
+				font-size: 16px
+			&:focus-within
+				border: 1px solid $orange
+		.input-error
+			margin-top: 6px
+			color: $red
+			font-size: 12px
+			font-style: normal
+			font-weight: 500
+			display: none
+			line-height: 16px
+		.input-btn
+			position: absolute
+			right: 16px
+			top: 50%
+			height: 24px
+			transform: translateY(-50%)
+			cursor: pointer
+		.input-btn.active
+			svg
+				path
+					fill: #fff
 
-.input.error
-	input
-		border: 1px solid $red
-	.input-error
-		display: block
-.checkbox
-	position: relative
-	cursor: pointer
-	&::after
-		content: ''
-		position: absolute
-		left: 0
-		top: 50%
-		transform: translateY(-50%)
-		border-radius: 6px
-		background: rgba(255, 255, 255, 0.10)
-		width: 20px
-		height: 20px
-	input
-		position: absolute
-		left: -100%
-		opacity: 0
-		z-index: -11
-	span
-		font-size: 14px
-		font-style: normal
-		font-weight: 500
-		line-height: 20px
-		color: #fff
-		letter-spacing: -0.07px
-		padding-left: 32px
-		a
-			color: $blue
-			&:hover
-				color: $orange
-.checkbox.active
-	&::after
-		background: url('../files/check.svg') no-repeat center
-		background-size: contain
+	.input.error
+		input
+			border: 1px solid $red
+		.input-error
+			display: block
+	.checkbox
+		position: relative
+		cursor: pointer
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			border-radius: 6px
+			background: rgba(255, 255, 255, 0.10)
+			width: 20px
+			height: 20px
+		input
+			position: absolute
+			left: -100%
+			opacity: 0
+			z-index: -11
+		span
+			font-size: 14px
+			font-style: normal
+			font-weight: 500
+			line-height: 20px
+			color: #fff
+			letter-spacing: -0.07px
+			padding-left: 32px
+			a
+				color: $blue
+				&:hover
+					color: $orange
+	.checkbox.active
+		&::after
+			background: url('../files/check.svg') no-repeat center
+			background-size: contain
 .diamond
 	background: #7786A0
 .platinum
@@ -295,13 +296,7 @@
 			display: none
 		&:hover
 			background: rgba(255, 255, 255, 0.12)
-	.signup__type__text
-		padding-left: 0
-		font-size: 16px
-		font-style: normal
-		font-weight: 400
-		line-height: 24px
-		letter-spacing: -0.08px
+
 	.checkbox.active
 		border: 1px solid $orange
 		background: rgba(255, 255, 255, 0.08)
@@ -311,9 +306,19 @@
 			.svg-stroke
 				stroke: $orange
 				fill: none
+#neve_body
+	.signup__type
+		.signup__type__text
+			padding-left: 0
+			font-size: 16px
+			font-style: normal
+			font-weight: 400
+			line-height: 24px
+			letter-spacing: -0.08px
 .signup__form__descr
 	margin-top: 32px
-.signup-coupon
+
+#neve_body .signup-coupon
 	display: flex
 	padding: 16px 20px
 	flex-direction: column
@@ -422,7 +427,7 @@
 	.signup-coupon__bottom
 		display: block
 		@include trans
-.all-coupons
+#neve_body .all-coupons
 	.signup-coupon
 		margin-bottom: 12px
 	.all-coupons__descr
@@ -456,9 +461,9 @@
 						fill: $orange
 	.login__form__login
 		margin-top: 32px
-.login__form__back
+#neve_body .login__form__back
 	background: rgba(255, 255, 255, 0.08)
-.signup-coupon3
+#neve_body .signup-coupon3
 	.signup-coupon__top
 		gap: 0
 		flex-direction: column
@@ -502,7 +507,7 @@
 		font-style: normal
 		font-weight: 500
 		line-height: 16px
-.coupon__slice
+#neve_body .coupon__slice
 	margin-bottom: 32px
 	display: flex
 	gap: 12px
@@ -551,7 +556,7 @@
 
 	&::after
 		display: none
-.coupon__slice.active
+#neve_body .coupon__slice.active
 	.coupon__slice__round
 		background: $orange
 		&::after
@@ -592,23 +597,16 @@
 	&__right
 		align-items: center
 		flex-shrink: 0
-	&__notauth
-		gap: 8px
-		.btn
-			flex-shrink: 0
-			font-size: 16px
-			font-style: normal
-			font-weight: 600
-			line-height: 24px
-			width: auto
-			height: 40px
-			padding: 0 16px
-			color: #fff
-			letter-spacing: -0.08px
+
 	&__avatar
 		width: 40px
+		border-radius: 100px
 		height: 40px
 		margin-right: 12px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
 	&__auth
 		cursor: pointer
 		align-items: center
@@ -625,13 +623,37 @@
 	&__auth.active
 		svg
 			transform: rotate(-180deg)
-.btn-black
-	border-radius: 8px
-	background: #090909
-.btn-white
-	border-radius: 8px
-	background: #fff
-	color: #282828
+#neve_body
+	.main-menu__notauth
+		gap: 8px
+		.btn
+			flex-shrink: 0
+			font-size: 16px
+			font-style: normal
+			font-weight: 600
+			line-height: 24px
+			width: auto
+			height: 40px
+			padding: 0 16px
+			color: #fff
+			letter-spacing: -0.08px
+	.main-menu__right
+		margin-left: 0
+		margin-right: 16px
+	.giveaway-header__plate
+		.btn
+			width: fit-content
+			margin: 0 auto
+			padding: 0 24px
+			height: 48px
+
+	.btn-black
+		border-radius: 8px
+		background: #090909
+	.btn-white
+		border-radius: 8px
+		background: #fff
+		color: #282828
 .giveaway-header
 	margin-bottom: 20px
 	.container
@@ -1125,3 +1147,5 @@
 		margin: 0 auto
 	.giveaway-entries__top
 		max-width: 100%
+.mobile-menu
+	display: none

@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 
-
+// 🐸 Menu auth dropdown 🐸
 document.addEventListener('DOMContentLoaded', () => {
 	const menuProfile = document.querySelector('.main-menu__auth');
 
@@ -177,3 +177,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	});
 });
+
+// 🐸 Mobile menu fade 🐸
+$('.main-menu__trigger').click(function () {
+	$('.main-menu').toggleClass('active');
+	if ($('.main-menu').hasClass('active')) {
+		$('body').addClass('hidden-body')
+	} else {
+		$('body').removeClass('hidden-body')
+	}
+})

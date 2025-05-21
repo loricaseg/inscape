@@ -13,20 +13,20 @@ input, textarea, a, button
 	-moz-appearance: none
 
 body
-	background: #fff
-	box-sizing: border-box
+	background: #fff!important
+	box-sizing: border-box!important
 	padding: 0!important
-	margin: 0
-	overflow-x: hidden
-	font-family: 'Inter', sans-serif
-	color: $text
-	font-weight: 400
-	-webkit-text-size-adjust: none
-	padding: 0 10px
-	display: flex
-	flex-direction: column
-	justify-content: space-between
-	height: 100%
+	margin: 0!important
+	overflow-x: hidden!important
+	font-family: 'Inter', sans-serif!important
+	color: $text!important
+	font-weight: 400!important
+	-webkit-text-size-adjust: none!important
+	padding: 0px!important
+	display: flex!important
+	flex-direction: column!important
+	justify-content: space-between!important
+	height: 100%!important
 li
 	display: block
 
@@ -36,10 +36,10 @@ ul
 
 p
 	margin: 0
-	font-family: 'Inter', sans-serif
+	font-family: 'Inter', sans-serif!important
 
 textarea
-	font-family: 'Inter', sans-serif
+	font-family: 'Inter', sans-serif!important
 	font-size: 14px
 	resize: none
 a
@@ -64,11 +64,11 @@ input:active, input:focus, button:active, button:focus, span:active, span:focus,
 	outline: none
 
 textarea, input
-	font-family: 'Inter', sans-serif
+	font-family: 'Inter', sans-serif!important
 	letter-spacing: 0
 
 button
-	font-family: 'Inter', sans-serif
+	font-family: 'Inter', sans-serif!important
 	background: none
 	cursor: pointer
 	border: none
@@ -82,7 +82,7 @@ h1
 	font-weight: 600
 h1, h2
 	margin: 0
-	font-family: 'Inter', sans-serif
+	font-family: 'Inter', sans-serif!important
 
 h2
 	font-size: 28px
@@ -92,7 +92,7 @@ h2
 
 h3
 	font-size: 30px
-	font-family: 'Inter', sans-serif
+	font-family: 'Inter', sans-serif!important
 	margin-top: 0
 	font-weight: 600
 
@@ -133,12 +133,14 @@ section
 //*********** Переменные **************
 .container
 	padding: 0 100px
-	margin: 0 auto
+	margin: 0 auto!important
 	position: relative
 	overflow: hidden
 	width: 1440px
-.row
+#neve_body .row
 	display: flex
+body .row 
+	margin: 0
 .row-center
 	justify-content: center
 .align-center
@@ -150,7 +152,7 @@ section
 .overflow-body
 	overflow-y: hidden
 
-.btn
+#neve_body .btn, #neve_body .btn[type="submit"]
 	display: flex
 	height: 48px
 	padding: 0px 24px
@@ -178,7 +180,7 @@ section
 		color: #767573
 		cursor: none
 		pointer-events: none
-.login__form__google
+#neve_body .login__form__google
 	border-radius: 10px
 	background: none
 	display: flex
