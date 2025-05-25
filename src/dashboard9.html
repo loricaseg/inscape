@@ -1,0 +1,85 @@
+@@include('partials/head.html', {
+"title": "Главная"
+})
+<div class="landing giveaway dashboard white">
+	@@include('partials/menu-white.html', {})
+	<div class="dashboard__wrapper">
+		<div class="container">
+			@@include('partials/left-menu.html', {})
+			<div class="dashboard__right">
+
+				<div class="dashboard__block billing">
+
+					<div class="dashboard__block__title">
+						Billing
+					</div>
+					<div class="billing__plate">
+						<svg width="58" height="24" viewBox="0 0 58 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_2503_15286)">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M57.9972 12.3833C57.9972 8.28749 55.9996 5.05566 52.1814 5.05566C48.3472 5.05566 46.0273 8.28748 46.0273 12.3513C46.0273 17.167 48.7661 19.5989 52.697 19.5989C54.6141 19.5989 56.064 19.1669 57.1595 18.5589V15.3591C56.064 15.9031 54.8074 16.239 53.2125 16.239C51.6498 16.239 50.2643 15.6951 50.0871 13.8072H57.965C57.965 13.5992 57.9972 12.7672 57.9972 12.3833ZM50.0388 10.8633C50.0388 9.05544 51.1504 8.30348 52.1653 8.30348C53.1481 8.30348 54.1952 9.05544 54.1952 10.8633H50.0388Z"
+									fill="white" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M39.8097 5.05566C38.2309 5.05566 37.216 5.79162 36.6521 6.3036L36.4427 5.31165H32.8984V23.9666L36.926 23.1187L36.9421 18.5909C37.5221 19.0069 38.3759 19.5989 39.7936 19.5989C42.6773 19.5989 45.3033 17.295 45.3033 12.2233C45.2872 7.58352 42.629 5.05566 39.8097 5.05566ZM38.8431 16.0791C37.8926 16.0791 37.3287 15.7431 36.9421 15.3271L36.926 9.39142C37.3449 8.92745 37.9248 8.60747 38.8431 8.60747C40.3091 8.60747 41.3241 10.2394 41.3241 12.3353C41.3241 14.4791 40.3252 16.0791 38.8431 16.0791Z"
+									fill="white" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M27.3555 4.11177L31.3991 3.24782V0L27.3555 0.847953V4.11177Z" fill="white" />
+								<path d="M31.3991 5.32764H27.3555V19.3269H31.3991V5.32764Z" fill="white" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M23.0208 6.51142L22.763 5.32749H19.2832V19.3267H23.3108V9.83923C24.2613 8.6073 25.8723 8.83129 26.3717 9.00728V5.32749C25.8562 5.1355 23.9713 4.78351 23.0208 6.51142Z"
+									fill="white" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M14.9665 1.85596L11.0356 2.68791L11.0195 15.5032C11.0195 17.8711 12.8078 19.615 15.1921 19.615C16.5131 19.615 17.4797 19.375 18.0114 19.087V15.8392C17.4958 16.0472 14.9504 16.7831 14.9504 14.4153V8.73558H18.0114V5.32777H14.9504L14.9665 1.85596Z"
+									fill="white" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M4.07589 9.39142C4.07589 8.76746 4.59141 8.52747 5.44525 8.52747C6.66963 8.52747 8.21621 8.89545 9.44059 9.55141V5.79162C8.10344 5.26365 6.7824 5.05566 5.44525 5.05566C2.17488 5.05566 0 6.75157 0 9.58341C0 13.9992 6.12188 13.2952 6.12188 15.1991C6.12188 15.9351 5.47747 16.175 4.5753 16.175C3.23815 16.175 1.53047 15.6311 0.177212 14.8951V18.7029C1.67546 19.3429 3.18982 19.6149 4.5753 19.6149C7.92623 19.6149 10.23 17.9669 10.23 15.1031C10.2139 10.3354 4.07589 11.1833 4.07589 9.39142Z"
+									fill="white" />
+							</g>
+							<defs>
+								<clipPath id="clip0_2503_15286">
+									<rect width="58" height="24" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+						<div class="billing__text">
+							InScape partners with Stripe for simplified billing. The customer portal is a secure, Stripe-hosted
+							page that allows you manage your subscription and billing information.
+						</div>
+						<a href="" class="btn btn-white">Customer Portal</a>
+					</div>
+					<div class="billing__changes">
+						<div class="billing__changes__title">
+							Change Payment Collection Method for Active Subscriptions
+						</div>
+						<div class="signup__type row">
+							<label class="checkbox">
+								<input type="radio" name="radio" class="accept radio">
+
+								<span class="signup__type__text">Automatic Charging</span>
+								<div class="billing__check__text">
+									Payments will be automatically charged to the saved payment method on file when an invoice is
+									generated.
+								</div>
+							</label>
+							<label class="checkbox active">
+								<input type="radio" name="radio" class="accept radio">
+
+								<span class="signup__type__text">Manual Payments</span>
+								<div class="billing__check__text">
+									You will receive an invoice, and your payments must be manually completed within the payment
+									due date.
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('partials/main-footer-white.html', {
+	"logo":"<img src='assets/files/menu2.svg' alt=''>"
+	})
+</div>
+@@include('partials/footer.html', {
+
+})

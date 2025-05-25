@@ -1,0 +1,54 @@
+@@include('partials/head.html', {
+"title": "Главная"
+})
+<div class="landing giveaway dashboard white">
+	@@include('partials/menu-white.html', {})
+	<div class="dashboard__wrapper">
+		<div class="container">
+			@@include('partials/left-menu.html', {})
+			<div class="dashboard__right">
+
+				<div class="dashboard__block">
+
+					<div class="dashboard__block__title">
+						Web notifications
+					</div>
+					<div class="dashboard__form__block dashboard__notification">
+						<div class="dashboard__form__subtitle">
+							Receiving Notifications
+						</div>
+						<form action="" class="dashboard__form">
+							<label class="checkbox radio ship-address">
+								<input type="checkbox" name="radio" class="accept">
+								<span>When my membership level is changed</span>
+							</label>
+							<label class="checkbox radio ship-address">
+								<input type="checkbox" name="radio" class="accept">
+								<span>When a member replies to one of my comments</span>
+							</label>
+							<label class="checkbox radio ship-address">
+								<input type="checkbox" name="radio" class="accept">
+								<span>When a guest replies to one of my comments</span>
+							</label>
+							<label class="checkbox radio ship-address">
+								<input type="checkbox" name="radio" class="accept">
+								<span>When a member comments on my posts</span>
+							</label>
+							<label class="checkbox radio ship-address">
+								<input type="checkbox" name="radio" class="accept">
+								<span>When a guest comments on my posts</span>
+							</label>
+							<a href="" class="btn">Update Settings</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('partials/main-footer-white.html', {
+	"logo":"<img src='assets/files/menu2.svg' alt=''>"
+	})
+</div>
+@@include('partials/footer.html', {
+
+})

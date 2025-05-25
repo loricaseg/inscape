@@ -1,0 +1,36 @@
+@@include('partials/head.html', {
+"title": "Главная"
+})
+<div class="landing giveaway dashboard white">
+	@@include('partials/menu-white.html', {})
+	<div class="dashboard__wrapper">
+		<div class="container">
+			@@include('partials/left-menu.html', {})
+			<div class="dashboard__right">
+
+				<div class="dashboard__block">
+
+					<div class="dashboard__block__title">
+						My Orders
+					</div>
+					<div class="dashboard__block__empty">
+						<img src="assets/files/empty.svg" alt="">
+						<div class="dashboard__block__empty__title">
+							Nothing here yet
+						</div>
+						<div class="dashboard__block__empty__text">
+							Orders will be here soon
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('partials/main-footer-white.html', {
+	"logo":"<img src='assets/files/menu2.svg' alt=''>"
+	})
+</div>
+@@include('partials/footer.html', {
+
+})

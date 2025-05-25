@@ -97,13 +97,14 @@
 	background: #777978
 .bronze
 	background: #7D574A
-.login
+#neve_body .login
 	background: #000
 	margin: 0
 	height: 100%
 
 	.container
 		padding: 24px
+		max-width: 100%
 		width: 100%
 		overflow: visible
 	&__wrapper
@@ -654,7 +655,7 @@
 		border-radius: 8px
 		background: #fff
 		color: #282828
-.giveaway-header
+#neve_body .giveaway-header
 	margin-bottom: 20px
 	.container
 		overflow: visible
@@ -805,6 +806,7 @@
 		border-radius: 12px
 		background: rgba(255, 255, 255, 0.08)
 		padding: 16px 20px 20px 20px
+		position: relative
 		&__top
 			display: flex
 			justify-content: space-between
@@ -830,15 +832,15 @@
 			width: 100%
 			margin-top: 12px
 			position: relative
-			&::after
-				content: ''
-				position: absolute
-				left: 0
-				border-radius: 4px
-				top: 0
-				height: 4px
-				width: 50%
-				background: $orange
+		.giveaway-cards__plate__progress
+
+			position: absolute
+			left: 20px
+			border-radius: 4px
+			bottom: 20px
+			height: 4px
+
+			background: $orange
 .giveaway-entries
 	position: relative
 	margin-bottom: 0
@@ -1149,3 +1151,584 @@
 		max-width: 100%
 .mobile-menu
 	display: none
+#neve_body
+	.dashboard
+		background: #fff
+		color: $text
+		.show-more
+			border-radius: 8px
+			background: #F2F2F2
+			height: 40px
+			display: flex
+			align-items: center
+			justify-content: center
+			font-size: 16px
+			font-style: normal
+			font-weight: 600
+			line-height: 24px
+			color: $text
+			margin-top: 21px
+			letter-spacing: -0.08px
+			&:hover
+				color: $blue
+		.footer
+			a
+				color: $text
+		&__wrapper
+			padding-top: 20px
+			padding-bottom: 20px
+			background: #F2F2F2
+			.container
+				display: flex
+				gap: 75px
+				overflow: visible
+				position: relative
+		&__left
+			width: 240px
+			flex-shrink: 0
+			position: sticky
+			top: 40px
+			left: 0
+			height: fit-content
+		&__avatar
+			width: 96px
+			margin-top: 20px
+			height: 96px
+			flex-shrink: 0
+			margin-bottom: 24px
+			position: relative
+			border-radius: 999px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+				border-radius: 999px
+		&__edit
+			display: flex
+			width: 24px
+			height: 24px
+			padding: 6px
+			justify-content: center
+			align-items: center
+			flex-shrink: 0
+			border-radius: 999px
+			background: #fff
+			box-shadow: 0px 0px 0px 0.5px rgba(0, 0, 0, 0.04), 0px 1px 4px 0px rgba(0, 0, 0, 0.08)
+			position: absolute
+			bottom: 0
+			right: 0
+			svg
+				width: 12px
+				height: 12px
+			&:hover
+				background: $orange
+				svg
+					path
+						fill: #fff
+		&__name
+			font-size: 24px
+			font-style: normal
+			font-weight: 600
+			line-height: 32px
+			margin-bottom: 48px
+		&__menu
+			.swiper-wrapper
+				flex-direction: column
+				gap: 4px
+			a
+				display: flex
+				align-items: center
+				gap: 12px
+				font-size: 16px
+				font-style: normal
+				font-weight: 500
+				line-height: 24px
+				color: #767573
+				@include trans
+				&:hover
+					color: $text
+
+			li
+				width: 100%
+				padding: 8px
+				a
+					width: 100%
+				&:last-child
+					margin-top: 16px
+					padding-top: 24px
+					border-top: 1px solid #E3E3E3
+			li.active
+				background: #fff
+				border-radius: 12px
+				a
+					color: $text
+				svg
+					path
+						fill: $orange
+		&__plates
+			display: grid
+			grid-template-columns: 2fr 1fr 1fr
+			grid-gap: 20px
+			margin-bottom: 20px
+			&__item
+				height: 120px
+				background: #fff
+				background-repeat: no-repeat
+				background-size: cover
+				padding: 24px 54px 24px 24px
+				border-radius: 16px
+			&__num
+				padding: 4px 14px
+				border-radius: 8px
+				background: #F2F2F2
+				width: fit-content
+				font-size: 18px
+				font-style: normal
+				font-weight: 600
+				line-height: 24px
+				letter-spacing: -0.27px
+				margin-bottom: 24px
+			&__text
+				font-size: 14px
+				font-style: normal
+				font-weight: 500
+				color: #767573
+				letter-spacing: -0.07px
+		.giveaway-cards__img
+			height: 275px
+			margin-bottom: 24px
+		.giveaway-cards__item
+			padding: 24px
+			background: #f2f2f2
+			border-radius: 16px
+		.giveaway-cards__descr
+			color: #767573
+			font-size: 16px
+			font-style: normal
+			font-weight: 400
+			line-height: 24px
+			margin-bottom: 24px
+			letter-spacing: -0.08px
+		.giveaway-cards__plate
+			background: #fff
+		.giveaway-cards__plate__top
+			p
+				color: $text
+			span
+				color: #767573
+		.giveaway-cards__plate__line
+			background: #EBEBEB
+		.giveaway-cards__name
+			color: $text
+			-webkit-text-fill-color: $text
+			font-size: 24px
+			font-style: normal
+			font-weight: 600
+			line-height: 32px
+			margin-bottom: 12px
+			letter-spacing: -0.36px
+		.dashboard__plates__main
+			.dashboard__plates__text
+				font-size: 18px
+				font-style: normal
+				font-weight: 500
+				color: #fff
+			.dashboard__plates__date
+				color: rgba(255, 255, 255, 0.60)
+				font-size: 12px
+				font-style: normal
+				font-weight: 500
+				margin-bottom: 32px
+		&__right
+			width: 100%
+		&__block
+			background: #fff
+			padding: 24px
+			border-radius: 16px
+			margin-bottom: 20px
+			position: relative
+			&__title
+				font-size: 20px
+				font-style: normal
+				font-weight: 600
+				line-height: 28px
+				letter-spacing: -0.3px
+			&__empty
+				display: flex
+				flex-direction: column
+				width: 100%
+				justify-content: center
+				align-items: center
+				text-align: center
+				margin-bottom: 96px
+				margin-top: 48px
+				img
+					margin-bottom: 24px
+				&__title
+					font-size: 24px
+					font-style: normal
+					font-weight: 600
+					line-height: 32px
+					letter-spacing: -0.36px
+					margin-bottom: 12px
+				&__text
+					color: #767573
+					font-size: 16px
+					font-style: normal
+					font-weight: 400
+					line-height: 24px
+					margin-bottom: 24px
+					text-align: center
+					max-width: 343px
+					letter-spacing: -0.08px
+				.btn
+					width: auto
+		.dashboard__block__contents
+			display: none
+		.dashboard__block__contents.active
+			display: block
+		.dashboard__block__grid
+			display: grid
+			margin-top: 21px
+			grid-template-columns: repeat(2, 1fr)
+			grid-gap: 20px
+		.dashboard__block__tabs
+			display: flex
+			gap: 24px
+			a
+				font-size: 18px
+				font-style: normal
+				font-weight: 600
+				line-height: 24px
+				color: #767573
+				letter-spacing: -0.27px
+				position: relative
+				&:hover
+					color: $text
+			a.active
+				color: $text
+				&:after
+					content: ''
+					position: absolute
+					bottom: -6px
+					left: 0
+					height: 2px
+					width: 100%
+					background: $orange
+					border-radius: 99px
+	.dashboard__block__items
+		display: grid
+		margin-top: 24px
+		grid-template-columns: repeat(3, 1fr)
+		grid-gap: 32px 20px
+	.dashboard__block__item
+		position: relative
+		img
+			width: 100%
+			margin-bottom: 16px
+			height: 280px
+			border-radius: 10px
+			object-fit: cover
+	.dashboard__block__item__label
+		position: absolute
+		top: 8px
+		left: 8px
+		border-radius: 8px
+		background: #2F9DD8
+		padding: 4px 8px
+		color: #fff
+		font-size: 14px
+		font-style: normal
+		font-weight: 600
+		line-height: 20px
+		letter-spacing: -0.07px
+	.dashboard__block__item__name
+		font-size: 16px
+		font-style: normal
+		font-weight: 600
+		line-height: 24px
+		letter-spacing: -0.08px
+		margin-bottom: 4px
+	.dashboard__block__item__cat
+		font-size: 16px
+		font-style: normal
+		margin-bottom: 4px
+		font-weight: 400
+		line-height: 24px
+		color: #767573
+		letter-spacing: -0.08px
+	.dashboard__block__item__brand
+		display: flex
+		gap: 5px
+		a
+			color: $blue
+
+			&:hover
+				color: $orange
+	.dashboard__block__item__bottom
+		margin-top: 16px
+		grid-gap: 8px
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		align-items: center
+		a
+			color: $text
+			&:hover
+				color: $blue
+	.dashboard__block__item__btn
+
+		background: #F2F2F2
+		border-radius: 8px
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 0 16px
+		height: 40px
+		gap: 8px
+		font-size: 16px
+		font-style: normal
+		font-weight: 600
+		line-height: 24px
+		letter-spacing: -0.08px
+	.tab-content
+		display: none
+	.tab-content.active
+		display: block
+	.dashboard__form
+		max-width: 420px
+		margin-top: 20px
+		.input
+			margin-bottom: 16px
+		.btn
+			width: fit-content
+			margin-top: 24px
+	.dashboard__form__subtitle
+		font-size: 16px
+		font-style: normal
+		font-weight: 600
+		line-height: 24px
+		letter-spacing: -0.08px
+		margin-bottom: 16px
+		span
+			color: #F04438
+	.dashboard__form__block
+		&:not(:first-of-type)
+			padding-top: 16px
+			margin-top: 24px
+			border-top: 1px solid #EBEBEB
+	.dashboard__notification
+		padding-top: 0!important
+		border: none!important
+		.dashboard__form__subtitle
+			font-size: 18px
+		.checkbox
+			span
+				font-size: 16px
+				font-weight: 400
+	.dashboard__delete__text
+		margin-top: 16px
+		margin-bottom: 24px
+#neve_body
+	.white
+		.main-menu
+			height: 80px
+			margin-bottom: 0
+		.main-menu__list
+			a
+				color: $text
+				&:hover
+					color: #767573
+			li.active
+				a
+					color: #767573
+		.main-menu__auth
+			svg
+				path
+					stroke: $text
+		.main-footer__menu a, .main-footer__write p
+			color: #767573
+		.main-footer__menu a
+			&:hover
+				color: $text
+		.main-footer__follow
+			p
+				color: #767573
+			a
+				background: #F2F2F2
+				svg
+					path
+						fill: #767573
+						fill-opacity: 1
+				&:hover
+					svg
+						path
+							fill: $text
+
+		.main-footer__buttons__icon
+			svg
+				path
+					fill: #C2C1C0
+					fill-opacity: 1
+		.main-footer__buttons__item
+			background: #F2F2F2
+			&:hover
+				background: #EEE
+				svg
+					path
+						fill: #767573
+		.main-footer__bottom p, .main-footer__bottom a
+			color: #767573
+		.main-footer__bottom a
+			&:hover
+				color: $text
+		.main-footer__descr
+			color: #767573
+		.white-input
+			position: relative
+			.input-placeholder
+				position: absolute
+				font-size: 12px
+				font-style: normal
+				font-weight: 400
+				line-height: 16px
+				top: 50%
+				transform: translateY(-50%)
+				left: 17px
+				color: #767573
+				opacity: 0
+				span
+					color: #F04438
+			input
+				background: #F2F2F2
+				color: $text
+				border-radius: 10px
+				height: 56px
+				&:focus-within
+					background: #fff
+			label
+				height: 56px
+
+		.white-input.active
+			.input-placeholder
+				opacity: 1
+				transform: none
+				top: 8px
+			input
+				padding-top: 28px
+		.white-password
+			input
+				background: #F2F2F2
+				color: $text
+				height: 56px
+			svg
+				path
+					fill: #C2C1C0
+		.white-password .input-btn.active
+			svg
+				path
+					fill: $text!important
+		.select
+			position: relative
+			.input-placeholder
+				position: absolute
+				font-size: 12px
+				font-style: normal
+				font-weight: 400
+				line-height: 16px
+				top: 50%
+				transform: translateY(-50%)
+				left: 17px
+				color: #767573
+				opacity: 0
+				span
+					color: #F04438
+			input
+				background: #F2F2F2
+				color: $text
+				border-radius: 10px
+				height: 56px
+				&:focus-within
+					background: #fff
+			label
+				height: 56px
+
+			label
+				background: #F2F2F2
+				color: $text
+				height: 56px
+				padding: 10px 16px
+				border-radius: 10px
+			select
+				width: 100%
+				border: none
+				background: none
+				margin-left: -3px
+				font-size: 16px
+				padding-top: 20px
+		.select.active
+			.input-placeholder
+				opacity: 1
+				transform: none
+				top: 8px
+			input
+				padding-top: 28px
+		.dashboard__form__block__row
+			display: flex
+			gap: 8px
+			.input
+				width: 100%
+			.dashboard__form__block__code
+				border-radius: 10px
+				background: #F2F2F2
+				display: flex
+				width: 105px
+				height: 56px
+				padding: 10px 16px
+				align-items: center
+				gap: 16px
+				width: 105px
+				flex-shrink: 0
+		.select-country
+			select
+				padding: 0
+				font-weight: 500
+		.checkbox
+			gap: 12px
+			*
+				@include trans
+			&::after
+				background: #dddddc
+				width: 42px
+				z-index: 1
+				height: 24px
+				border-radius: 20px
+			span
+				color: $text
+				padding-left: 54px
+			&::before
+				content: ''
+				top: 50%
+				transform: translateY(-50%)
+				background: #fff
+				position: absolute
+				left: 2px
+				@include trans
+				width: 20px
+				height: 20px
+				border-radius: 40px
+				z-index: 2
+		.checkbox.active
+			&::after
+				background: $orange
+				width: 42px
+				z-index: 1
+				height: 24px
+				border-radius: 20px
+			&::before
+				left: 20px
+		.ship-address
+			display: flex
+			margin-bottom: 24px
+		.btn.disabled
+			background: #F2F2F2
+			color: rgba(40, 40, 40, 0.40)

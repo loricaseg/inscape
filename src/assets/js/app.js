@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // 🐸 Логин - активация кнопки при введении кода 🐸
 document.addEventListener('DOMContentLoaded', () => {
 	const codeInput = document.querySelector('.login-code');
-	const continueLink = document.querySelector('a.btn.login__form__login');
+	const continueLink = document.querySelector('.btn.login__form__login');
 
 	//Поменять число lenght на нужное, если надо ограничить количество символов
 	if (codeInput && continueLink) {
@@ -157,6 +157,13 @@ const swiper1 = new Swiper('.giveaway-entries__wrapper', {
 	spaceBetween: 10,
 })
 
+if ($(window).width() < 980) {
+	const swiper2 = new Swiper('.dashboard__menu', {
+		// Default parameters
+		slidesPerView: 'auto',
+		spaceBetween: 10,
+	})
+}
 // 🐸 Footer мобильное меню 🐸
 document.addEventListener('DOMContentLoaded', () => {
 	const menuTitle = document.querySelector('.main-footer__menu-title');
@@ -187,3 +194,40 @@ $('.main-menu__trigger').click(function () {
 		$('body').removeClass('hidden-body')
 	}
 })
+
+// 🐸 Tabs 🐸
+$('.tab-selector a').click(function (e) {
+	e.preventDefault();
+
+	$('.tab-selector a').removeClass('active');
+	$('.tab-content').removeClass('active');
+
+	$(this).addClass('active');
+	$($(this).attr('href')).addClass('active');
+})
+
+
+document.addEventListener("DOMContentLoaded", function () {
+	const inputWrappers = document.querySelectorAll('.white-input');
+
+	inputWrappers.forEach(wrapper => {
+		const inputField = wrapper.querySelector('input');
+
+		function updateActiveClass() {
+			if (inputField.value.trim() !== '') {
+				wrapper.classList.add('active');
+			} else {
+				wrapper.classList.remove('active');
+			}
+		}
+
+		// Проверка при загрузке
+		updateActiveClass();
+
+		// Обработчики событий
+		inputField.addEventListener('input', updateActiveClass);
+		inputField.addEventListener('blur', updateActiveClass);
+	});
+});
+
+

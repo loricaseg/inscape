@@ -1,0 +1,100 @@
+@@include('partials/head.html', {
+"title": "Главная"
+})
+<div class="landing giveaway dashboard white">
+	@@include('partials/menu-white.html', {})
+	<div class="dashboard__wrapper">
+		<div class="container">
+			@@include('partials/left-menu.html', {})
+			<div class="dashboard__right">
+				<div class="dashboard__plates">
+					<div class="dashboard__plates__item dashboard__plates__main"
+						style="background-image: url('assets/img/dash1.png');">
+						<div class="dashboard__plates__num">0</div>
+						<span class="dashboard__plates__text">Available Offers</span>
+					</div>
+					<div class="dashboard__plates__item">
+						<div class="dashboard__plates__num">0</div>
+						<span class="dashboard__plates__text">Accumulated Entries</span>
+					</div>
+					<div class="dashboard__plates__item">
+						<div class="dashboard__plates__num">0</div>
+						<span class="dashboard__plates__text">Days to Next Draw</span>
+					</div>
+					<div class="dashboard__plates__item dashboard__plates__main"
+						style="background-image: url('assets/img/dash2.png');">
+						<div class="dashboard__plates__date">Since 03.08.2025</div>
+						<span class="dashboard__plates__text">Free Member</span>
+					</div>
+					<div class="dashboard__plates__item">
+						<div class="dashboard__plates__num">3</div>
+						<span class="dashboard__plates__text">Days as a Member</span>
+					</div>
+					<div class="dashboard__plates__item">
+						<div class="dashboard__plates__num">0</div>
+						<span class="dashboard__plates__text">Offers Unlocked</span>
+					</div>
+				</div>
+
+				<div class="dashboard__block">
+					<div class="dashboard__block__title">
+						Recent Offers Unlocked
+					</div>
+					<div class="dashboard__block__empty">
+						<img src="assets/files/empty.svg" alt="">
+						<div class="dashboard__block__empty__title">
+							Nothing here yet
+						</div>
+						<div class="dashboard__block__empty__text">
+							To access the catalog, upgradeto a more advanced plan
+						</div>
+						<a href="" class="btn">
+							Upgrade Your Membership
+						</a>
+					</div>
+				</div>
+
+				<div class="dashboard__block">
+					<div class="dashboard__block__tabs tab-selector">
+						<a href="#tab1" class="active">Current Draws</a>
+						<a href="#tab2">Past Draws</a>
+					</div>
+					<div class="dashboard__block__contents active tab-content" id="tab1">
+						<div class="dashboard__block__empty">
+							<img src="assets/files/empty.svg" alt="">
+							<div class="dashboard__block__empty__title">
+								Nothing here yet
+							</div>
+							<div class="dashboard__block__empty__text">
+								To access the catalog, upgradeto a more advanced plan
+							</div>
+							<a href="" class="btn">
+								Upgrade Your Membership
+							</a>
+						</div>
+					</div>
+					<div class="dashboard__block__contents tab-content" id="tab2">
+						<div class="dashboard__block__empty">
+							<img src="assets/files/empty.svg" alt="">
+							<div class="dashboard__block__empty__title">
+								Nothing here yet
+							</div>
+							<div class="dashboard__block__empty__text">
+								To access the catalog, upgradeto a more advanced plan
+							</div>
+							<a href="" class="btn">
+								Upgrade Your Membership
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('partials/main-footer-white.html', {
+	"logo":"<img src='assets/files/menu2.svg' alt=''>"
+	})
+</div>
+@@include('partials/footer.html', {
+
+})

@@ -1,0 +1,66 @@
+@@include('partials/head.html', {
+"title": "Главная"
+})
+<div class="landing giveaway dashboard white">
+	@@include('partials/menu-white.html', {})
+	<div class="dashboard__wrapper">
+		<div class="container">
+			@@include('partials/left-menu.html', {})
+			<div class="dashboard__right">
+
+				<div class="dashboard__block">
+					<div class="dashboard__block__title">
+						Account
+					</div>
+					<form action="" class="dashboard__form">
+						<div class="dashboard__form__block">
+							<div class="input white-input">
+								<label>
+									<input type="text" placeholder="Username">
+									<div class="input-placeholder">
+										Username
+									</div>
+								</label>
+								<div class="input-error">Please enter a valid email</div>
+							</div>
+							<div class="input white-input">
+								<label>
+									<input type="text" placeholder="Last Name">
+									<div class="input-placeholder">
+										Last Name
+									</div>
+								</label>
+								<div class="input-error">Please enter a valid email</div>
+							</div>
+							<div class="input white-input">
+								<label>
+									<input type="text" placeholder="First Name">
+									<div class="input-placeholder">
+										First Name
+									</div>
+								</label>
+								<div class="input-error">Please enter a valid email</div>
+							</div>
+							<div class="input white-input">
+								<label>
+									<input type="text" placeholder="Email Address">
+									<div class="input-placeholder">
+										Email Address
+									</div>
+								</label>
+								<div class="input-error">Please enter a valid email</div>
+							</div>
+							<button class="btn">Update Account</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('partials/main-footer-white.html', {
+	"logo":"<img src='assets/files/menu2.svg' alt=''>"
+	})
+</div>
+@@include('partials/footer.html', {
+
+})

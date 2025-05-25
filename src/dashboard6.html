@@ -1,0 +1,128 @@
+@@include('partials/head.html', {
+"title": "Главная"
+})
+<div class="landing giveaway dashboard white">
+	@@include('partials/menu-white.html', {})
+	<div class="dashboard__wrapper">
+		<div class="container">
+			@@include('partials/left-menu.html', {})
+			<div class="dashboard__right">
+
+				<div class="dashboard__block">
+
+					<div class="dashboard__block__title">
+						Shipping Address
+					</div>
+					<form action="" class="dashboard__form">
+						<label class="checkbox radio ship-address">
+							<input type="checkbox" name="radio" class="accept">
+							<span>Shipping address same as billing address</span>
+						</label>
+						<div class="dashboard__form__block">
+
+							<div class="input white-input">
+								<label>
+									<input type="text" placeholder="First Name">
+									<div class="input-placeholder">
+										First Name<span>*</span>
+									</div>
+								</label>
+								<div class="input-error">Please enter a valid email</div>
+							</div>
+							<div class="input white-input">
+								<label>
+									<input type="text" placeholder="Last Name">
+									<div class="input-placeholder">
+										"Last Name<span>*</span>
+									</div>
+								</label>
+								<div class="input-error">Please enter a valid email</div>
+							</div>
+						</div>
+						<div class="dashboard__form__block">
+							<div class="dashboard__form__subtitle">
+								Country / Region <span>*</span>
+							</div>
+							<div class="input  select select-country">
+								<label>
+									<img src="assets/files/flag.svg" alt="" class="flag">
+									<select name="" id="">
+										<option value="">United States (US)</option>
+										<option value="">United States (US)</option>
+									</select>
+									<div class="input-placeholder">
+										State<span>*</span>
+									</div>
+								</label>
+								<div class="input-error">Please enter a valid email</div>
+							</div>
+						</div>
+						<div class="dashboard__form__block">
+							<div class="dashboard__form__subtitle">
+								Street address <span>*</span>
+							</div>
+							<div class="input white-input">
+								<label>
+									<input type="text" placeholder="House number and street name">
+									<div class="input-placeholder">
+										House number and street name
+									</div>
+								</label>
+								<div class="input-error">Please enter a valid email</div>
+							</div>
+							<div class="input white-input">
+								<label>
+									<input type="text" placeholder="Apartment, suite, unit, etc. (optional)">
+									<div class="input-placeholder">
+										Apartment, suite, unit, etc. (optional)
+									</div>
+								</label>
+								<div class="input-error">Please enter a valid email</div>
+							</div>
+						</div>
+						<div class="dashboard__form__block">
+							<div class="input white-input">
+								<label>
+									<input type="text" placeholder="Town / City *">
+									<div class="input-placeholder">
+										Town / City <span>*</span>
+									</div>
+								</label>
+								<div class="input-error">Please enter a valid email</div>
+							</div>
+							<div class="input  select active">
+								<label>
+									<select name="" id="">
+										<option value="">Connecticut</option>
+										<option value="">Connecticut</option>
+									</select>
+									<div class="input-placeholder">
+										State<span>*</span>
+									</div>
+								</label>
+								<div class="input-error">Please enter a valid email</div>
+							</div>
+							<div class="input white-input">
+								<label>
+									<input type="text" placeholder="ZIP Code *">
+									<div class="input-placeholder">
+										ZIP Code <span>*</span>
+									</div>
+								</label>
+								<div class="input-error">Please enter a valid email</div>
+							</div>
+
+						</div>
+						<button class="btn">Save Address</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('partials/main-footer-white.html', {
+	"logo":"<img src='assets/files/menu2.svg' alt=''>"
+	})
+</div>
+@@include('partials/footer.html', {
+
+})
