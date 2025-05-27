@@ -231,3 +231,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// 🐸 FAQ 🐸
+$('.faq__show').click(function () {
+	$(this).parents('.faq__item').toggleClass('active');
+	$(this).siblings('.faq__hide').slideToggle(100)
+})
